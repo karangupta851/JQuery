@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            Print Div Using jQuery
+        </title>
+        <script src="js/jQuery.print.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="printdiv">
+            Print Content Here
+        </div>
+        <div id="printbtn">Click Here to Print Div</div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#printbtn').click(
+                    $.print('#printdiv'));
+            });
+        </script>
+    </body>
+</html>
