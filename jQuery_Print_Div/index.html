@@ -10,11 +10,11 @@
         </div>
         <a id="printbtn">Click Here to Print Div</a>
         <script type="text/javascript">
-$(function(){
+jQuery(function(){
 // Hook up the print link.
-$( "#printbtn" ).attr( "href", "javascript:void( 0 )" ).click( function(){
+jQuery( "#printbtn" ).attr( "href", "javascript:void( 0 )" ).click( function(){
 		// Print the DIV.
-		$( "#printdiv" ).print();
+		jQuery( "#printdiv" ).print();
 		// Cancel click event.
 		return( false );
 	});
