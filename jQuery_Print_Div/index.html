@@ -3,8 +3,6 @@
         <title>
             Print Div Using jQuery
         </title>
-        <script src="js/jQuery.print.js" type="text/javascript"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     </head>
     <body>
         <div id="printdiv">
@@ -14,8 +12,7 @@
         <script type="text/javascript">
 $(function(){
 // Hook up the print link.
-$( "#printbtn" )
-	.attr( "href", "javascript:void( 0 )" ).click( function(){
+$( "#printbtn" ).attr( "href", "javascript:void(0)" ).click( function(){
 		// Print the DIV.
 		$( "#printdiv" ).print();
 		// Cancel click event.
@@ -23,5 +20,7 @@ $( "#printbtn" )
 	});
 });
         </script>
+	<script src="js/jQuery.print.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     </body>
 </html>
